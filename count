@@ -1,0 +1,23 @@
+public class WordCount {
+    public static void main(String[] args) {
+
+        String sentence = "this is a java program";
+
+        sentence = sentence.toUpperCase();
+
+        int count = 0;
+
+        if(sentence.length() != 0){
+            count++;
+        }
+
+        for(int i = 0; i < sentence.length(); i++){
+            if(sentence.charAt(i) == ' '){
+                count++;
+            }
+        }
+
+        System.out.println("Uppercase Sentence: " + sentence);
+        System.out.println("Number of words: " + count);
+    }
+}
